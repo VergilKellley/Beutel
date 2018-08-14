@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Vergil D. Kelley">
+
+	<title>Beutel Bakery</title>
+
+	<style>
+		body{
+			color:#fff;
+			font-family: 'Nunito Semibold', sans-serif;
+}
+
+		#wrapper{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-auto-rows: minmax(100px, auto);
+			margin:0 auto;
+			max-width: 100vw;
+			grid-gap: 10px;
+			grid-template-areas: 
+			"header header header header"
+			"aside aside main nav"
+			"aside aside main nav"
+			"aside aside main nav"
+			"aside aside main nav"
+			"aside aside main nav"
+			"section section section section"
+			"section section section section"
+			"footer footer footer footer";
+		}
+		
+	/*@media screen and (min-width: 760px){
+		#wrapper{
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-auto-rows: minmax(100px, auto);
+			margin:0 auto;
+			max-width: 100%;
+			grid-gap: 10px;
+			grid-template-areas: 
+			"header header header header"
+			"aside .main main"
+			"main main main main"
+			"section section section section"
+			"footer footer footer footer";
+		}
+	}*/
+
+		header{
+			display: inline-block;
+		}
+		ul{
+			list-style: none;
+		}
+
+		li{
+			display: inline;
+		}
+
+		a{
+			text-decoration: none;
+			color: #3d282a;
+			padding:;
+
+		}
+		#wrapper>*{
+			background-color: #3bbced;
+			padding:30px;	
+		}
+
+		header{
+			grid-area: header;
+		}
+
+		main{
+			grid-area: main;		
+		}
+
+		.main-boxes{
+			
+			width:100%;
+			height: 33vh;
+			background-color: green;
+			margin: 5%;
+		}
+
+		.main-boxes img{
+			width: 100%;
+			height: 100%;
+		}
+
+		aside{
+			grid-area: aside;
+		}
+
+		aside img.img-slider{
+			width: 100%;
+
+		}
+
+		nav{
+			grid-area: nav;
+
+		}
+
+		.nav-boxes{
+
+			width:100%;
+			height: 66vh;
+			background-color: green;
+			margin: 5%;
+		}
+
+		.nav-boxes img{
+			width: 100%;
+			height: 100%;
+		}
+
+		.nav-boxes-2{
+			width:100%;
+			height: 33vh;
+			background-color: green;
+			margin-top: 10%;
+			margin-left: 5%;
+		}
+
+		.nav-boxes-2 img{
+			width: 100%;
+			height: 100%;
+		}
+
+		section {
+			grid-area: section;
+		}
+
+		footer{
+			grid-area: footer; 
+		}
+			
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+	
+				<header>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="patisserie">Patisserie</a></li>
+						<li><a href="macarons.html">Macarons</a></li>
+						<li><a href="cakes.html">Cakes</a></li>
+						<li><a href="weddings.html">Weddings</a></li>
+						<li><a href="catering.html">Catering Menu</a></li>
+					</ul>
+				</header>
+
+				<aside>
+					<img class="img-slider" src="img/makingmacarons.jpg">
+				</aside>
+
+				<main>
+					<div class="main-boxes">
+						<img src="img/macarons.png">
+					</div>
+
+					<div class="main-boxes">
+						<img src="img/macgift.jpg">
+					</div>
+
+					<div class="main-boxes">
+						<img src="img/singlemacaron.png">
+					</div>
+				</main>
+
+				<nav>
+					<div class="nav-boxes">
+						<img src="img/mactower.jpg">
+					</div>
+
+					<div class="nav-boxes-2">
+						<img src="img/box.png">
+					</div>
+					
+					</nav>
+				
+				<section>
+					section
+				</section>
+				
+				
+				
+				
+				<footer>Footer</footer>
+			</div>
+</body>
+</html>
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Vergil D. Kelley">
+
+	<title>Beutel Bakery</title>
+
+	<style>
+		body{
+			color:#fff;
+			font-family: 'Nunito Semibold', sans-serif;
+			text-align: center;
+}
+
+		#wrapper{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-auto-rows: minmax(100px, auto);
+			margin:0 auto;
+			max-width: 100vw;
+			grid-gap: 10px;
+			/*grid-template-areas: 
+			"header header header header"
+			"footer footer footer footer"
+			"aside main main";
+			/*"main main main main"
+			"aside aside nav nav"
+			"section section section section"
+			"section section section section"
+			;*/
+		}
+		
+	/*@media screen and (min-width: 760px){
+		#wrapper{
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-auto-rows: minmax(100px, auto);
+			margin:0 auto;
+			max-width: 100%;
+			grid-gap: 10px;
+			grid-template-areas: 
+			"header header header header"
+			"aside .main main"
+			"main main main main"
+			"section section section section"
+			"footer footer footer footer";
+		}
+	}*/
+
+		#wrapper>*{
+			background-color: #3bbced;
+			padding:30px;	
+		}
+
+
+		nav{
+			display: inline-block;
+		}
+		ul{
+			list-style: none;
+		}
+
+		li{
+			display: inline;
+		}
+
+		a{
+			text-decoration: none;
+			color: #3d282a;
+			padding:;
+
+		}
+
+		header{
+			/*grid-area: header;*/
+			color: #3d282a;
+			grid-column: 1/13;
+			grid-row: 1/2;
+		}
+
+		main{
+			position: relative;
+			grid-column: 4/13;
+			grid-row: 2/7;
+		}
+
+		main img{
+			position: relative;
+			left:10.5rem;
+			top:-16rem;
+
+		}
+
+		 h2{
+		 	position: relative;
+		 	left:-25%;
+		 	top: -35%;
+			width: 25%;
+			color: #3d282a;
+			margin-right: 0;
+			display: inline-block;
+		}
+		
+		main p{
+			position: relative;
+			left: -34rem;
+			text-align: left;
+			top: 5rem;
+			width: 25%;
+			font-size: 18px;
+			color: #3d282a;
+			margin-right: 0;
+			display: inline-block;
+		}
+
+		aside{
+			grid-column: 1/4;
+			grid-row: 2/7;
+		}
+		section {
+			position: relative;
+			grid-gap:10px;
+			grid-column: 1/13;
+			grid-row: 7/17;
+		}
+
+		.item{
+			position: relative;
+			display: inline-block;
+			width: 20%;
+			height: 40%;
+			background: white;
+			margin-top:2rem;
+			padding: 20px;
+		}
+
+		.item img{
+			width:95%;
+			height:70%;
+		}
+
+		.item img, p{
+			color: #3d282a;
+		}
+
+		footer{
+			grid-column: 1/13;
+			grid-row: 17/18;
+		}
+		
+
+		nav{
+			
+		}
+
+		
+		
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+	
+				<header>
+					<a href="index.html">Beutel</a>
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="patisserie">Patisserie</a></li>
+							<li><a href="macarons.html">Macarons</a></li>
+							<li><a href="cakes.html">Cakes</a></li>
+							<li><a href="weddings.html">Weddings</a></li>
+							<li><a href="catering.html">Catering Menu</a></li>
+						</ul>
+					</nav>
+				</header>
+				<main>
+					
+					<img src="img/makingmacarons.jpg">
+				</main>
+				<section>
+					<div class="item">
+						<img src="img/box.png">
+						<p>Macarons 13.95ea</p>
+					</div>
+					
+
+					<div class="item">
+						<img src="img/macarons.png">
+						<p>Macarons 13.95ea</p>
+					</div>
+
+					<div class="item">
+						<img src="img/gift.jpg">
+						<p>Macarons 13.95ea</p?\>
+					</div>
+
+					<div class="item">
+						<img src="img/macaronbox.png">
+						<p>Macarons 13.95ea</p>
+					</div>
+
+
+					<div class="item">
+						<img src="img/mactower.jpg">
+						<p>Macarons 13.95ea</p>
+					</div>
+					
+
+					<div class="item">
+						<img src="img/singlemacaron.png">
+						<p>Macarons 13.95ea</p>
+					</div>
+
+					<div class="item">
+						<img src="img/macgift.jpg">
+						<p>Macarons 13.95ea</p>
+					</div>
+
+					<div class="item">
+						<img src="img/openbox.png">
+						<p>Macarons 13.95ea</p>
+					</div>
+
+				</section>
+				
+				<aside>Aside</aside>
+				
+				<footer>Footer</footer>
+			</div>
+</body>
+</html>-->
