@@ -12,8 +12,10 @@
 
 	<style>
 		body{
-			color:#fff;
+			background:#846c52;
 			font-family: 'Nunito Semibold', sans-serif;
+			padding: 0;
+			margin:0;
 }
 
 		#wrapper{
@@ -25,6 +27,7 @@
 			grid-gap: 10px;
 			grid-template-areas: 
 			"header header header header"
+			"aside aside main nav"
 			"aside aside main nav"
 			"aside aside main nav"
 			"aside aside main nav"
@@ -53,9 +56,19 @@
 	}*/
 
 		header{
+			position: relative;
+			top: 0;
 			display: inline-block;
+			background-color: #fff;
+		}
+
+		header h1{
+			position: absolute;
+			left: 10%;
+			top: 4%;
 		}
 		ul{
+			text-align: center;
 			list-style: none;
 		}
 
@@ -66,11 +79,11 @@
 		a{
 			text-decoration: none;
 			color: #3d282a;
-			padding:;
+			padding-right:20px;
 
 		}
 		#wrapper>*{
-			background-color: #3bbced;
+			/*background-color: #3bbced;*/
 			padding:30px;	
 		}
 
@@ -137,10 +150,12 @@
 
 		section {
 			grid-area: section;
+			background-color: #fff;
 		}
 
 		footer{
-			grid-area: footer; 
+			grid-area: footer;
+			text-align: center; 
 		}
 			
 	</style>
@@ -149,8 +164,9 @@
 	<div id="wrapper">
 	
 				<header>
+					
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<h1><a href="index.html">Buetel</a></h1>
 						<li><a href="patisserie">Patisserie</a></li>
 						<li><a href="macarons.html">Macarons</a></li>
 						<li><a href="cakes.html">Cakes</a></li>
