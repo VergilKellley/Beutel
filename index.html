@@ -259,7 +259,8 @@
 				</header>
 
 				<aside>
-					<img class="img-slider" src="img/makingmacarons.jpg">
+					<img name="slide" width="100%" height="100%">
+					<!--<img class="img-slider" src="img/makingmacarons.jpg">-->
 				<div id="slider-text-area">
 					<p id="slider-text-header">Description Here (photo or video above)</p>
 					<p id="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -320,6 +321,33 @@
 			</div>
 
 			<footer><p>Copyright &copy; 2018 <span style="font-style: italic;">Beutel</span>~Catering.com. All rights reserved. </p><p><a href="https://vergilkellley.github.io/" target="_blank">Site Designed & Developed by Vergil Kelley Web Development</a></p></footer>
+
+			<script>
+				var i = 0; //start point
+				var images = [];
+				var time = 3000;
+
+				// Image list
+				images[0] = 'img/image1.jpg';
+				images[1] = 'img/image2.jpg';
+				images[2] = 'img/image3.png';
+
+				// Change Image
+
+				function changeImg(){
+					document.slide.src = images[i];
+
+					if(i < images.length - 1){
+						i++;
+					} else {
+						i = 0;
+					}
+
+					setTimeout('changeImg()', time);
+				}
+
+				window.onload = changeImg;
+			</script>
 </body>
 </html>
 
