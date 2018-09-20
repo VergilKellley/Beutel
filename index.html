@@ -1,594 +1,211 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie-edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="Vergil D. Kelley">
+	<title>Beutel Desserts</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<title>Beutel Bakery</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500">
 
-	<style>
-		body{
-			background:#846c52;
-			font-family: 'Nunito Semibold', sans-serif;
-			padding: 0;
-			margin:0;
-}
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-		#wrapper{
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			grid-auto-rows: minmax(5px, auto);
-			margin:0 auto;
-			max-width: 100vw;
-			grid-gap: 10px;
-			grid-template-areas: 
-			"header header header header"
-			"aside aside main nav"
-			"aside aside main nav"
-			"aside aside main nav"
-			"aside aside main nav"
-			"aside aside main nav"
-			"aside aside main nav"
-			"section section section section"
-			"section section section section"
-			"footer footer footer footer";
-		}
-		
-	/*@media screen and (min-width: 760px){
-		#wrapper{
-			display: grid;
-			grid-template-columns: repeat(12, 1fr);
-			grid-auto-rows: minmax(100px, auto);
-			margin:0 auto;
-			max-width: 100%;
-			grid-gap: 10px;
-			grid-template-areas: 
-			"header header header header"
-			"aside .main main"
-			"main main main main"
-			"section section section section"
-			"footer footer footer footer";
-		}
-	}*/
-
-		header{
-			position: relative;
-			top: 0;
-			display: inline-block;
-			background-color: #fff;
-		}
-
-		header h1{
-			position: absolute;
-			left: 10%;
-		
-		}
-		ul{
-			text-align: center;
-			list-style: none;
-		}
-
-		li{
-			display: inline;
-		}
-
-		h1 a{
-			position: relative;
-			top: -2rem;
-			left: -2rem;
-
-			text-decoration: none;
-			color: #3d282a;
-		}
-
-		#beutel{
-			font-style: italic;
-		}
-
-		#catering{
-			color:#D4A36A;
-		}
-
-		header ul li a{
-			position: relative;
-			text-decoration: none;
-			color: #3d282a;
-			padding-right:20px;
-			left: 3rem;
-
-		}
-
-		.social-media-icons{
-    	height:25px;
-    	width:25px;
-    	margin-right:1.5rem;
-    	border-radius:100px;
-    }
-		#wrapper>*{
-			/*background-color: #3bbced;*/
-			padding:30px;	
-		}
-
-		header{
-			grid-area: header;
-		}
-
-		main{
-			grid-area: main;		
-		}
-
-		.main-boxes{
-			
-			width:100%;
-			height: 33vh;
-			background-color: green;
-			margin: ;
-		}
-
-		.main-boxes img{
-			width: 100%;
-			height: 100%;
-		}
-
-		main p{
-			color:#fff;
-			background-color: #000;
-			padding: 10px;
-			text-align: center;
-		}
-
-		aside{
-			grid-area: aside;
-		}
-
-		aside img.img-slider{
-			width: 100%;
-
-		}
-
-		nav{
-		
-			grid-area: nav;
-
-		}
-
-		.nav-box{
-
-			width:100%;
-			height: 68vh;
-			background-color: green;
-		}
-
-		.nav-box img{
-			position: relative;
-			width: 100%;
-			height: 117%;
-		}
-
-		nav p{
-			position: relative;
-			color:#fff;
-			background-color: #000;
-			padding: 10px;
-			text-align: center;
-		}
-
-		#mactower-p{
-			position: relative;
-			top: 4rem;
-		}
-
-		.nav-box-2{
-			width:100%;
-			height: 33vh;
-			background-color: green;
-			margin-top: 29%;
-		}
-
-		.nav-box-2 img{
-			width: 100%;
-			height: 100%;
-		}
-
-		section {
-			text-align: center;
-			grid-area: section;
-			background-color: #fff;
-		}
-
-		#slider-text-header {
-			font-size:2rem;
-		}
-
-		#slider-text-area{
-			margin-top: 20px;
-			max-width: 100%;
-			height: 19.5rem;
-			padding: 10px;
-			background-color: #fff;
-		}
-		
-		section h1{
-			color:#3d282a;
-			font-size:3rem;
-			text-align: center;
-		}
-
-		footer{
-			grid-area: footer;
-			text-align: right;
-			margin-right: 10px;
-			color: #fff;
-			font-size: 15px; 
-		}
-
-		footer a{
-			color: #fff;
-			text-decoration: none;
-		}
-			
-	</style>
-		
+	<script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-	<div id="wrapper">
-	
-				<header>
-					
-					<ul>
-						<h1><a href="index.html"><span id="beutel">
-							 Beutel</span><span id="catering">~Catering</span></a></h1>
-						
-						<li><a href="patisserie">Patisserie</a></li>
-						<li><a href="macarons.html">Macarons</a></li>
-						<li><a href="cakes.html">Cakes</a></li>
-						<li><a href="weddings.html">Weddings</a></li>
-						<li><a href="catering.html">Catering Menu</a></li>
-						<li><a href="about.html">About Us</a></li>
-						<!--<a href=""><img class="logo" src="img/fb.jpeg" alt="facebook logo"></a>
-					<a href=""><img class="logo" src="img/ig.jpg" alt="instagram logo"></a>
-					<a href=""><img class="logo" src="img/twtr.jpg" alt="twitter logo"></a>-->
 
+		 <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span id="beutel">Beutel~</span><span id="desserts">Desserts</span></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#showcase">Home</a></li>
+            <li><a href="#info1">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <br>
+    <br>
 
-					</ul>
-					
-				</header>
+    <section id="showcase">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6 col-sm-6">
+    				<div class="showcase-left">
+    					<img src="img/img3.jpg">
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-sm-6">
+    				<div class="showcase-right">
+    					<h1>Light & Creamy</h1>
+    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    				</div>
+    				<br>
+    				<a class="btn btn-default btn-lg showcase-btn">Read More</a>
+    			</div>
+    		</div>
+    	</div>
+    </section>
 
-				<aside>
-					<img name="slide" width="100%" height="100%">
-					<!--<img class="img-slider" src="img/makingmacarons.jpg">-->
-				<div id="slider-text-area">
-					<p id="slider-text-header">Description Here (photo or video above)</p>
-					<p id="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<h4><span id="beutel">Beutel</span><span id="catering">~Catering</span></h4>
-				</div>
+    <section id="testimonial">
+    	<div class="container">
+    		<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."</p>
+    		<p class="customer">- Joe Foodie</p>
+    	</div>
+    </section>
 
-				</aside>
+   
+    <section id="info1">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6 col-sm-6">
+    				<div class="info-left">
+    					<img src="img/img2.jpg">
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-sm-6">
+    				<div class="info-right">
+    					<h2>Delicious Delectable Delightful</h2>
+    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+    					<br>
+    					<a class="btn btn-default btn-lg info1-btn">Read More</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
 
+    <hr>
 
+    <section id="info2">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6 col-sm-6">
+    				<div class="info-left">
+    					<h2>Weddings</h2>
+    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-sm-6">
+    				<div class="info-right">
+    					<h2>Catering</h2>
+    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
 
-				<main>
-					<div class="main-boxes">
-						<img src="img/cupcake.jpeg"></div>
-					<p>Cup Cakes
-					</p>
+    <section id="contact">
+    	<div class="container2">
+    		<div class="row">
+    			<div class="col-md-5 col-sm-5">
+    				<form>
+    					<div class="form-group">
+    						<label>Name: </label>
+    						<input class="form-control" type="text" name="" value="" placeholder="Enter Name">
+    					</div>
+    					<div class="form-group">
+    						<label>Email: </label>
+    						<input class="form-control" type="Email" name="" value="" placeholder="Enter Email">
+    					</div>
+    					<div class="form-group">
+    						<label>Message: </label>
+    						<textarea class="form-control" placeholder="Enter Message"></textarea>
+    					</div>
+    					<button class="btn btn-default">Submit</button>
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+    </section>
 
-					<div class="main-boxes">
-						<img src="img/brownie.jpeg">
-					</div>
-					<p>Fudge Brownies</p>
+    <footer>
+    	<p class="text-center"><a href="https://vergilkellley.github.io/" target="_blank">Vergil Kelley Web Design & Development Copyright &copy; 2018</a></p>
+    </footer>
 
-					<div class="main-boxes">
-						<img src="img/fruittart.jpeg" alt="fruittart">
-					</div>
-					<p>Fruit Tarts</p>
-				</main>
+    <script
+  	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
 
-				<nav>
-					<div class="nav-box">
-						<img src="img/mactower.jpg">
-					</div>
-					<p id="mactower-p">Macarons $11.95ea</p>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-					
+	<script>
+		window.sr = ScrollReveal();
+		sr.reveal('.navbar', {
+			duration: 2000, 
+			origin: 'bottom'
+		});
+		sr.reveal('.showcase-left', {
+			duration: 2000, 
+			origin: 'top',
+			distance:'300px'
+		});
+		sr.reveal('.showcase-right', {
+			duration: 2000, 
+			origin: 'right',
+			distance:'300px'
+		});
+		sr.reveal('.showcase-btn', {
+			duration: 2000,
+			delay: 2000, 
+			origin: 'bottom'
+		});
+		sr.reveal('#testimonial div', {
+			duration: 2000,
+			origin: 'bottom'
+		});
+		sr.reveal('.info1-btn', {
+			duration: 2000,
+			delay: 2000, 
+			origin: 'bottom'
+		});
+		sr.reveal('.info-left', {
+			duration: 2000,
+			origin: 'left',
+			distance:'300px',
+			viewFactor: 0.2
+		});
+		sr.reveal('.info-right', {
+			duration: 2000,
+			origin: 'right',
+			distance:'300px',
+			viewFactor: 0.2
+		});
+	</script>
 
-					<div class="nav-box-2">
-						<img src="img/fruitcake.jpeg">
-					</div>
-					<p>Fruit Cake</p>
-					
-					</nav>
-				
-				<section>
-					<div>
-						<h1><span id="beutel">
-							 Beutel</span><span id="catering">~Catering</span></h1>
-						<img class="social-media-icons" src="img/fb.png">
-						<img class="social-media-icons" src="img/insta.jpg">
-						<img class="social-media-icons" src="img/yelp.png">
-					</div>
-
-				</section>
-			</div>
-
-			<footer><p>Copyright &copy; 2018 <span style="font-style: italic;">Beutel</span>~Catering.com. All rights reserved. </p><p><a href="https://vergilkellley.github.io/" target="_blank">Site Designed & Developed by Vergil Kelley Web Development</a></p></footer>
-
-			<script>
-				var i = 0; //start point
-				var images = [];
-				var time = 3000;
-
-				// Image list
-				images[0] = 'img/image1.jpg';
-				images[1] = 'img/image2.jpg';
-				images[2] = 'img/image3.png';
-
-				// Change Image
-
-				function changeImg(){
-					document.slide.src = images[i];
-
-					if(i < images.length - 1){
-						i++;
-					} else {
-						i = 0;
-					}
-
-					setTimeout('changeImg()', time);
+	<script>
+		$(function(){
+			// smooth scrolling effect
+			$('a[href*="#"]:not([href="#"])').click(function(){
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+					}, 1000);
+						return false;
 				}
+			}
+		});
+	});
+	</script>
 
-				window.onload = changeImg;
-			</script>
 </body>
 </html>
-
-
-
-
-
-
-<!--<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie-edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="Vergil D. Kelley">
-
-	<title>Beutel Bakery</title>
-
-	<style>
-		body{
-			color:#fff;
-			font-family: 'Nunito Semibold', sans-serif;
-			text-align: center;
-}
-
-		#wrapper{
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			grid-auto-rows: minmax(100px, auto);
-			margin:0 auto;
-			max-width: 100vw;
-			grid-gap: 10px;
-			/*grid-template-areas: 
-			"header header header header"
-			"footer footer footer footer"
-			"aside main main";
-			/*"main main main main"
-			"aside aside nav nav"
-			"section section section section"
-			"section section section section"
-			;*/
-		}
-		
-	/*@media screen and (min-width: 760px){
-		#wrapper{
-			display: grid;
-			grid-template-columns: repeat(12, 1fr);
-			grid-auto-rows: minmax(100px, auto);
-			margin:0 auto;
-			max-width: 100%;
-			grid-gap: 10px;
-			grid-template-areas: 
-			"header header header header"
-			"aside .main main"
-			"main main main main"
-			"section section section section"
-			"footer footer footer footer";
-		}
-	}*/
-
-		#wrapper>*{
-			background-color: #3bbced;
-			padding:30px;	
-		}
-
-
-		nav{
-			display: inline-block;
-		}
-		ul{
-			list-style: none;
-		}
-
-		li{
-			display: inline;
-		}
-
-		a{
-			text-decoration: none;
-			color: #3d282a;
-			padding:;
-
-		}
-
-		header{
-			/*grid-area: header;*/
-			color: #3d282a;
-			grid-column: 1/13;
-			grid-row: 1/2;
-		}
-
-		main{
-			position: relative;
-			grid-column: 4/13;
-			grid-row: 2/7;
-		}
-
-		main img{
-			position: relative;
-			left:10.5rem;
-			top:-16rem;
-
-		}
-
-		 h2{
-		 	position: relative;
-		 	left:-25%;
-		 	top: -35%;
-			width: 25%;
-			color: #3d282a;
-			margin-right: 0;
-			display: inline-block;
-		}
-		
-		main p{
-			position: relative;
-			left: -34rem;
-			text-align: left;
-			top: 5rem;
-			width: 25%;
-			font-size: 18px;
-			color: #3d282a;
-			margin-right: 0;
-			display: inline-block;
-		}
-
-		aside{
-			grid-column: 1/4;
-			grid-row: 2/7;
-		}
-		section {
-			position: relative;
-			grid-gap:10px;
-			grid-column: 1/13;
-			grid-row: 7/17;
-		}
-
-		.item{
-			position: relative;
-			display: inline-block;
-			width: 20%;
-			height: 40%;
-			background: white;
-			margin-top:2rem;
-			padding: 20px;
-		}
-
-		.item img{
-			width:95%;
-			height:70%;
-		}
-
-		.item img, p{
-			color: #3d282a;
-		}
-
-		footer{
-			grid-column: 1/13;
-			grid-row: 17/18;
-		}
-		
-
-		nav{
-			
-		}
-
-		
-		
-	</style>
-</head>
-<body>
-	<div id="wrapper">
-	
-				<header>
-					<a href="index.html">Beutel</a>
-					<nav>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="patisserie">Patisserie</a></li>
-							<li><a href="macarons.html">Macarons</a></li>
-							<li><a href="cakes.html">Cakes</a></li>
-							<li><a href="weddings.html">Weddings</a></li>
-							<li><a href="catering.html">Catering Menu</a></li>
-						</ul>
-					</nav>
-				</header>
-				<main>
-					
-					<img src="img/makingmacarons.jpg">
-				</main>
-				<section>
-					<div class="item">
-						<img src="img/box.png">
-						<p>Macarons 13.95ea</p>
-					</div>
-					
-
-					<div class="item">
-						<img src="img/macarons.png">
-						<p>Macarons 13.95ea</p>
-					</div>
-
-					<div class="item">
-						<img src="img/gift.jpg">
-						<p>Macarons 13.95ea</p?\>
-					</div>
-
-					<div class="item">
-						<img src="img/macaronbox.png">
-						<p>Macarons 13.95ea</p>
-					</div>
-
-
-					<div class="item">
-						<img src="img/mactower.jpg">
-						<p>Macarons 13.95ea</p>
-					</div>
-					
-
-					<div class="item">
-						<img src="img/singlemacaron.png">
-						<p>Macarons 13.95ea</p>
-					</div>
-
-					<div class="item">
-						<img src="img/macgift.jpg">
-						<p>Macarons 13.95ea</p>
-					</div>
-
-					<div class="item">
-						<img src="img/openbox.png">
-						<p>Macarons 13.95ea</p>
-					</div>
-
-				</section>
-				
-				<aside>Aside</aside>
-				
-				<footer>Footer</footer>
-			</div>
-</body>
-</html>-->
