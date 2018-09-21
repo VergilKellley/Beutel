@@ -13,6 +13,11 @@ p{
 	color: #3d282a;
 }
 
+.cursive-text {
+	font-family: 'Petit Formal Script', cursive;
+	color:#c12828;
+}
+
 #beutel{
 			font-style: italic;
 			color: #3d282a;
