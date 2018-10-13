@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Beutel Desserts</title>
-    <!-- google fonts link -->
+	<title></title>
+	<!-- google fonts link -->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500">
 
     <!-- google fonts link -->
@@ -14,10 +14,12 @@
     <!-- scroll reveal link -->
 	<script src="https://unpkg.com/scrollreveal"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-        <!-- navbar -->
+	<div id="home"></div>
+	<!-- navbar -->
 		 <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -27,22 +29,40 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><span id="beutel">Beutel</span><span id="desserts">~Desserts</span></a>
+          <a class="navbar-brand" href="#"><span id="desserts">Beutel</span></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gelato">Gelato</a></li>
             <li><a href="#info1">Catering</a></li>
-            <li><a href="topreadmore.html">About</a></li>
+            <!--<li><a href="about.html">About</a></li>-->
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <br>
-    <br>
+	<header class="v-header container">
+		<div class="fullscreen-video-wrap">
+			<video preload="auto" autoplay="autoplay" muted loop="loop">
+				<source src="baking.mp4" type="video/mp4">
+					Your brower does not support the video tag
+			</video>
+			</div>
+			<div class="header-overlay"></div>
+			<div class="header-content">
+				<h1 class="cursive-white">Homemade Desserts</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<!--<a href="#" class="btn">Learn More</a>-->
+			</div>
+	</header>
 
-    <section id="showcase">
+    <br>
+    <br>
+    <div id="gelato"></div>
+
+	
+	<section id="showcase">
     	<div class="container">
     		<div class="row">
     			<div class="col-md-6 col-sm-6">
@@ -50,14 +70,15 @@
     					<img src="img/img3.jpg">
     				</div>
     			</div>
+
     			<div class="col-md-6 col-sm-6">
     				<div class="showcase-right">
     					<h1><span class="cursive-text">Light & Creamy</span></h1>
     					<p class="text-bg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <a href="">(Recipe)</a>.</p>
+    					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <!--<a href="">(Recipe)</a>-->.</p>
     				</div>
     				<br>
-    				<a href="topreadmore.html" class="btn btn-default btn-lg showcase-btn">Read More</a>
+    				<!--<a href="topreadmore.html" class="btn btn-default btn-lg showcase-btn">Read More</a>-->
     			</div>
     		</div>
     	</div>
@@ -69,6 +90,12 @@
     		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."</p>
     		<p class="customer">- Joe Foodie</p>
     	</div>
+
+    </section>
+
+    <section>
+    	<div id="parallax-img"></div>
+    	<div id="parallax-overlay"></div>
     </section>
 
    
@@ -82,11 +109,11 @@
     			</div>
     			<div class="col-md-6 col-sm-6">
     				<div class="info-right">
-    					<h2><span class="cursive-text">Delicious Delectable Delightful</span></h2>
+    					<h2><span class="cursive-text">Catering</span></h2>
     					<p class="text-bg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
     					<br>
-    					<a class="btn btn-default btn-lg info1-btn">Read More</a>
+    					<!--<a class="btn btn-default btn-lg info1-btn">Read More</a>-->
     				</div>
     			</div>
     		</div>
@@ -107,7 +134,7 @@
     			</div>
     			<div class="col-md-6 col-sm-6">
     				<div class="info-right">
-    					<h2><span class="cursive-text">Catering</span></h2>
+    					<h2><span class="cursive-text">Delightful</span></h2>
     					<p class="text-bg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
     				</div>
@@ -215,6 +242,30 @@
 		});
 	});
 	</script>
+	
 
+	<!--<section class="section section-a">
+		<div class="container">
+			<h1>Section A</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+
+	<section class="section section-b">
+		<div class="container">
+			<h1>Section B</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>-->
 </body>
 </html>
